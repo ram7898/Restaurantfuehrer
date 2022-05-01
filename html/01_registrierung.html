@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+	  <meta charset="UTF-8">
+	  <link rel="stylesheet" href="../css/styleRegister.css" type="text/css">
+	</head>
+	<body>
+		<form id="registrierung" method="post" action="servlet01registrierung" accept-charset="utf-8">
+			<fieldset><legend>Registrierung</legend>
+	
+				<div>
+					<label for="mail">E-Mail:</label>
+			  		<input type="email" name="email" id="email" placeholder="E-Mail-Adresse" required>
+			  		<span></span>
+				</div>
+				<div>	
+					<label for="password">Passwort eingeben:</label>
+			  		<input type="password" name="password" id="plz" placeholder="Ihr Passwort" required>
+			  		<span></span>
+				</div>
+				<div>	
+					<label class="textarea" for="anmerkung">Anmerkung:</label>
+			  		<textarea name="anmerkung" id="anmerkung" placeholder="Hier Anmerkungen eingeben..." rows="8"></textarea>
+				</div>	
+				<div>
+					<button type="submit" name="submit" value="submit">Absenden</button>
+					<button type="reset" name="reset" value="reset">Zurücksetzen</button>
+				</div>	
+				<!--  macht noch keinen Sinn, weil bei keinem Feld ein * ist -->
+				<p>(*) = Pflichtfeld</p>
+			</fieldset>
+		</form>
+		<hr>
+		<footer>
+			<a href="04_startseite.html">Zur Startseite</a> |
+			<a href="05_profil.html">Zu meinem Profil</a>
+		</footer>
+	</body>
+</html>
