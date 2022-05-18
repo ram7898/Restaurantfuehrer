@@ -2,31 +2,35 @@
 <html lang="de">
 	<head>
 	  <meta charset="UTF-8">
+	  <title>Registrierung</title>
 	  <link rel="stylesheet" href="../css/styleRegister.css" type="text/css">
 	</head>
 	<body>
-		<form id="registrierung" method="post" action="servlet01registrierung" accept-charset="utf-8">
+		<form id="01_registrierung" method="post" action="../Servlet01registrierung" accept-charset="UTF-8">
 			<fieldset><legend>Registrierung</legend>
-	
 				<div>
 					<label for="mail">E-Mail:</label>
-			  		<input type="email" name="email" id="email" placeholder="E-Mail-Adresse" required>
+			  		<input type="email" name="email" id="email" placeholder="E-Mail-Adresse" maxlength="25" required>
 			  		<span></span>
 				</div>
 				<div>	
 					<label for="password">Passwort eingeben:</label>
-			  		<input type="password" name="password" id="plz" placeholder="Ihr Passwort" required>
+			  		<input type="password" name="password" id="pwd" placeholder="Ihr Passwort" maxlength="25" required>
 			  		<span></span>
 				</div>
 				<div>	
+					<label for="passwordRepeat">Passwort wiederholen:</label>
+			  		<input type="password" name="passwordRepeat" id="pwdrep" placeholder="Ihr Passwort wiederholen" maxlength="25" required>
+			  		<span></span>
+				</div>  
+				<div>	
 					<label class="textarea" for="anmerkung">Anmerkung:</label>
-			  		<textarea name="anmerkung" id="anmerkung" placeholder="Hier Anmerkungen eingeben..." rows="8"></textarea>
+			  		<textarea name="anmerkung" id="anmerkung" placeholder="Hier Anmerkungen eingeben..." rows="8" maxlength="127"></textarea>
 				</div>	
 				<div>
 					<button type="submit" name="submit" value="submit">Absenden</button>
 					<button type="reset" name="reset" value="reset">Zurücksetzen</button>
 				</div>	
-				<!--  macht noch keinen Sinn, weil bei keinem Feld ein * ist -->
 				<p>(*) = Pflichtfeld</p>
 			</fieldset>
 		</form>

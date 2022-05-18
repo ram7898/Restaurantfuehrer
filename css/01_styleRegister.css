@@ -40,10 +40,6 @@
 		color: green;
 		content: " ✓"
 	}
-	input[type='number']:valid + span::after {
-		color: green;
-		content: " ✓"
-	}
 	input:hover{
 		background: #c0c0c0;
 		border: 2px  #0000ff;
