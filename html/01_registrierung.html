@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html lang="de">
-	<head>
-	  <meta charset="UTF-8">
-	  <title>Registrierung</title>
-	  <link rel="stylesheet" href="../css/01_styleRegister.css" type="text/css">
-	</head>
-	<body>
-		<form id="01_registrierung" method="post" action="../Servlet01registrierung" accept-charset="UTF-8">
-			<fieldset><legend>Registrierung</legend>
-				<div>
-					<label for="email">E-Mail:</label>
-			  		<input type="email" name="email" id="email" placeholder="E-Mail-Adresse" maxlength="25" required>
-			  		<span></span>
-				</div>
-				<div>	
-					<label for="password">Passwort eingeben:</label>
-			  		<input type="password" name="password" id="password" placeholder="Ihr Passwort" maxlength="25" required>
-			  		<span></span>
-				</div>
-				<div>	
-					<label for="passwordRepeat">Passwort wiederholen:</label>
-			  		<input type="password" name="passwordRepeat" id="passwordRepeat" placeholder="Ihr Passwort wiederholen" maxlength="25" required>
-			  		<span></span>
-				</div>  
-				<div>	
-					<label class="textarea" for="anmerkung">Anmerkung:</label>
-			  		<textarea name="anmerkung" id="anmerkung" placeholder="Hier Anmerkungen eingeben..." rows="8" maxlength="127"></textarea>
-				</div>	
-				<div>
-					<button type="submit" name="submit" value="submit">Absenden</button>
-					<button type="reset" name="reset" value="reset">Zurücksetzen</button>
-				</div>	
-				<p>(*) = Pflichtfeld</p>
-			</fieldset>
-		</form>
-		<hr>
-		<footer>
-			<a href="04_startseite.html">Zur Startseite</a> |
-			<a href="05_profil.html">Zu meinem Profil</a>
-		</footer>
-	</body>
+<head>
+<meta charset="UTF-8">
+<title>Registrierung</title>
+<link rel="stylesheet" href="../css/01_styleRegister.css"
+	type="text/css">
+</head>
+<script type="text/javascript" src="01js_registrierung.js">
+	
+</script>
+<body>
+	<form id="01_registrierung" method="post"
+		action="../Servlet01registrierung" accept-charset="UTF-8">
+		<fieldset>
+			<legend>Registrierung</legend>
+			<div>
+				<label for="email">E-Mail:</label> <input type="email" name="email"
+					id="email" placeholder="E-Mail-Adresse" maxlength="25" required>
+				<span></span>
+			</div>
+			<div>
+				<label for="password">Passwort eingeben:</label> <input
+					type="password" name="password" id="password"
+					placeholder="Ihr Passwort" maxlength="25" required> <span></span>
+			</div>
+			<div>
+				<label for="passwordRepeat">Passwort wiederholen:</label> <input
+					type="password" name="passwordRepeat" id="passwordRepeat"
+					placeholder="Ihr Passwort wiederholen" maxlength="25" required>
+				<span></span>
+			</div>
+			<div>
+				<label class="textarea" for="anmerkung">Anmerkung:</label>
+				<textarea name="anmerkung" id="anmerkung"
+					placeholder="Hier Anmerkungen eingeben..." rows="8" maxlength="127"></textarea>
+			</div>
+			<div>
+				<button type="submit" name="submit" value="submit">Absenden</button>
+				<button type="reset" name="reset" value="reset">Zurücksetzen</button>
+			</div>
+			<p>(*) = Pflichtfeld</p>
+		</fieldset>
+	</form>
+	<hr>
+	<footer>
+		<a href="04_startseite.html">Zur Startseite</a> | <a
+			href="05_profil.html">Zu meinem Profil</a>
+	</footer>
+</body>
 </html>
