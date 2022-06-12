@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="ISO-8859-1">
+<title>Persönliche Daten ändern</title>
+</head>
+<body>
+	<form id="01a_datenupdate" method="post" action="../Servlet01a_datenupdate" accept-charset="UTF-8">
+		<fieldset><legend>Datenbankeintrag ändern</legend>
+			<div>
+				<label for="id">Id:</label>
+				<input type="number" name="id" id="id" placeholder="Id des DB-Eintrags" required>
+			</div>
+			<div>
+				<label for="mail">E-Mail:</label>
+				<input type="email" name="email" id="email" placeholder="E-Mail-Adresse" required>
+			</div>
+			<div>
+				<label for="password">Passwort eingeben:</label>
+				<input type="password" name="password" id="pwd" placeholder="Ihr Passwort" required>
+			</div>
+			<div>
+				<button name="submit" type="submit">Absenden</button>
+				<button name="reset" type="reset">Zurücksetzen</button>
+			</div>
+		</fieldset>
+	</form>
+</body>
+</html>

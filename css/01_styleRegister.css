@@ -1,9 +1,16 @@
 @charset "utf-8";
+	#duty {
+	background-color: white;
+	border-width:thin;
+	border-style: solid;
+	float:left;
+	color: red;
+	}
 	fieldset {
 	width:30em;
-		background: #8080ff;
+		background:navy;
 		border: solid 5px;
-		border-radius: 0 50px 50px 0;
+		border-radius: 50px 50px 50px 50px;
 		margin: auto;
 	}
 	legend {	
@@ -30,7 +37,7 @@
 		display: block;
 		text-align: left;
 		font: bolder;
-		color: maroon;
+		color:lime;
 	}
 	input:required + span::after {
 		color: red;
@@ -49,6 +56,8 @@
 	}
 	button {
 		width: 7em;
+		background: lime;
+		color: white;
 	}
 	 button[type="reset"]{
 	 	margin-left: 25em;
