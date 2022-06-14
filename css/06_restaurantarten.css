@@ -1,0 +1,46 @@
+@charset "ISO-8859-1";
+
+body { background-color: white; }
+
+h1 { 
+	font-size:2em;
+	font-family:cursive;	 
+	text-align:center;
+	color:red;
+	}
+
+h2 { 
+	font-size:1.8em;
+	background-color: lightgreen; 
+	}
+
+h3 { 
+	text-align:center;
+	font-size:1.5em;
+	background-color: lightgreen;
+	color: red;
+	}
+
+#restaurant {
+    border: 5px solid black;
+    margin: 20px;
+    padding: 10px;
+    background-color: lightgray;
+	float: left;
+}
+
+#informationen {
+	background-color: white;
+}
+
+#informationen p {
+	font-weight: bold;
+}
+
+#informationen b {
+	font-weight: lighter;
+}
+
+hr {
+	clear:left;
+}
